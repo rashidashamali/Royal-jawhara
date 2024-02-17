@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>idoukan</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="icon" href="logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Pacifico|Great+Vibes|Dancing+Script|Allura&display=swap">
+  <script src="https://kit.fontawesome.com/5ea7b67ab2.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      background-color:black;
+      color: white;
+      text-align: center;
+    }
+    .navbar-nav .navbar-item {
+      margin-right: 30px; 
+    }
+    .centered-paragraph {
+      text-align: center;
+      margin:  auto;
+      font-weight: 200;
+    }
+    .hover-content {
+      display: none;
+      position: absolute; 
+      background-color: white;
+      color: black;
+      padding: 20px;
+      border-radius: 10px;
+      translate: 0 30px;
+    }
+    .nav-link:hover .hover-content {
+      display: inline-block;
+    }
+    .dropdown-menu{
+      translate: -90px -10px;
+    }
+    .panier {
+      display: none;
+      position: absolute; 
+      background-color: white;
+      color: grey;
+      padding: 70px;
+      border-radius: 10px;
+      translate: -40px 30px;
+      text-align: center;
+    }
+    .nav-link:hover .panier {
+      display: inline-block;
+    }
+    #title {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
+    }
+    .card-header {
+      background-color: #000000;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+      color: #333; 
+      font-weight: bold;
+    }
+    .card {
+      background-color: #000000;
+      box-shadow: 0px 4px 16px rgba(125, 152, 183, 0.5);
+      margin: 10px;
+    }
+    img {
+      border-radius: 10px;
+    }
+    .price {
+      font-size: 24px;
+      color: #333;
+      font-weight: bold; 
+      color: #7D98B7;
+    }
+    .card-img-top {
+      object-fit: cover; 
+      height: 500px;
+    }
+    .fotter-list {
+  display: flex; /* Use flexbox */
+  justify-content: center; 
+  list-style-type: none; 
+  padding: 0;
+}
+
+.fotter-list li {
+  margin-right: 40px; /* Adjust spacing between items */
+}
+.btn.btn-dark:hover{
+  border-radius: 50%;
+  color: #7D98B7;
+}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark " >
+    <div class="container-fluid">
+      <a href="Projet.html" class="navbar-brand"><img src="logo-removebg-preview.png" alt="LOGO "height="100" width="100" class="d-inline-block "></a>
+      <h2 class="centered-paragraph ms-auto"> R O Y A L <br>J A W H A R A <br><p id="title">BE ELEGANT</p></h2>
+      <button class="navbar-toggler" role="button" data-bs-toggle="collapse" data-bs-target="#beldi">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     <div class="collapse navbar-collapse" id="beldi">
+      <ul class="navbar-nav ms-auto" >
+        <li class="navbar-item dropdown"><a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-solid fa-user" style="color: #ffffff;"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="Login.html" class="dropdown-item"><i class="fa-solid fa-right-to-bracket" style="color: #0c0d0d;"></i> <strong>Log in</strong></a></li>
+                <div class="dropdown-divider"></div>
+                <li><a href="Sign.html"class="dropdown-item"><i class="fa-solid fa-user-plus" style="color: #161718;"></i> <strong>Sign in</strong></a></li>
+                
+            </ul>
+        </li>
+        <li class="navbar-item"><a href="Panier.html" class="nav-link"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        <span class="panier"><i class="fa-solid fa-cart-shopping" style="color: #7c7e83;"></i> <br>your basket is empty</span>    
+        </a></li>
+        <li class="navbar-item"><a href="Service.html"class="nav-link "><i class="fa-solid fa-headset" style="color: #f8f9fc;"></i>
+            <span class="hover-content"><i class="fa-solid fa-headset" style="color: #000000;"></i><strong> Customer service</strong> <br>
+              What can we do for you? </span>
+        </a></li>
+        <li class="navbar-item dropdown"><a href="Circulation.html" class="nav-link dropdown-toggle"  data-bs-toggle="dropdown"><i class="fa-solid fa-globe" style="color: #ffffff;"></i></a>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item"><h4>Circulation</h4></li>
+                <div class="dropdown-divider"></div>
+                <li class="dropdown-item">MAD/DH</li>
+                <div class="dropdown-divider"></div>
+                <li class="dropdown-item">EUR/€</li>
+                <div class="dropdown-divider"></div>
+                <li class="dropdown-item">USD/$</li>
+                <div class="dropdown-divider"></div>
+                <li class="dropdown-item">GBP/GBP£</li>
+                <div class="dropdown-divider"></div>
+                <li class="dropdown-item">CAD/CA$</li>
+            </ul>
+        </li>
+    </ul>
+  </div>
+    </div>
+  </nav>  
+  <br><br><br>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="card text-center">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <img src="idoukan/idoukan.jpg" class="card-img-top " alt="">
+            </div>
+            <div class="card-footer">
+              <span class="price">300 DH</span><br>
+              <button type="submit" class="btn btn-dark">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="card text-center">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <img src="idoukan/idoukan1.jpg" class="card-img-top " alt="">
+            </div>
+            <div class="card-footer">
+              <span class="price">350 DH</span><br>
+              <button type="submit" class="btn btn-dark">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="card text-center">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <img src="idoukan/idoukan2.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-footer">
+              <span class="price">400 DH</span><br>
+              <button type="submit" class="btn btn-dark">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="card text-center">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <img src="idoukan/IDOUKAN3.png" class="card-img-top" alt="">
+            </div>
+            <div class="card-footer">
+              <span class="price">350 DH</span><br>
+              <button type="submit" class="btn btn-dark">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="card text-center">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <img src="idoukan/idoukan4.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-footer">
+              <span class="price">350 DH</span><br>
+              <button type="submit" class="btn btn-dark">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="card text-center">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <img src="idoukan/idoukan5.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-footer">
+              <span class="price">350 DH</span><br>
+              <button type="submit" class="btn btn-dark">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="card text-center">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <img src="idoukan/idoukan6.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-footer">
+              <span class="price">400 DH</span><br>
+              <button type="submit" class="btn btn-dark">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="card text-center">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <img src="idoukan/idoukan7.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-footer">
+              <span class="price">200 DH</span><br>
+              <button type="submit" class="btn btn-dark">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="card text-center">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <img src="idoukan/idoukan8.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-footer">
+              <span class="price">200 DH</span><br>
+              <button type="submit" class="btn btn-dark">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="card text-center">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <img src="idoukan/idoukan9.jpg" class="card-img-top" alt="">
+            </div>
+            <div class="card-footer">
+              <span class="price">200 DH</span><br>
+              <button type="submit" class="btn btn-dark">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </main>
+  <hr>
+  <footer>
+    <h2>About us</h2>
+          <p class="About-us">We are ROYAL JAWHARA,
+             a proud purveyor of authentic Moroccan fashion, specializing in exquisitely crafted caftans, takshita, jabador, and jellaba.
+              With deep roots in Moroccan culture and a passion for traditional craftsmanship, we bring the timeless elegance and intricate designs of Moroccan attire to a global audience.
+               Each piece in our collection is meticulously handcrafted by skilled artisans, preserving centuries-old techniques and celebrating the rich heritage of Moroccan fashion. At ROYAL JAWHARA, we strive to showcase the beauty and versatility of Moroccan attire, offering unique and luxurious pieces that reflect the essence of Moroccan craftsmanship and style.</p>
+          
+    <ul class="fotter-list">
+      <li><a href=""><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a></li>
+      <li><a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
+      <li><a href=""><i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a></li>
+      <li><a href=""><i class="fa-brands fa-pinterest-p" style="color: #ffffff;"></i></a></li>
+      <li><a href=""><i class="fa-brands fa-linkedin" style="color: #fafafa;"></i></a></li>
+    </ul>
+    <hr>
+    <p>Copyright © ROYAL JAWHARA 2024. All rights reserved</p>
+  </footer>
+  <script src="bootstrap.bundle.js"></script> 
+</body>
+</html>
